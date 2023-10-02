@@ -11,7 +11,7 @@ export default function Character() {
     <div className="flex flex-col  items-center justify-center h-screen w-full">
       <CharacterProfile
         character={
-          marvelCharacterData?.data?.data?.results?.at(0) as unknown as Result
+          marvelCharacterData?.data?.data?.results?.[0] as unknown as Result
         }
       />
     </div>
